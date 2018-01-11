@@ -15,7 +15,7 @@ int main()
             TypeList<OneDimCalculate<double, double, sinPolicy>,
                     TypeList<OneDimCalculate<double, double, sinPolicy>,
                             TypeList<OneDimCalculate<double, double, sinPolicy>,
-                                TypeList<OneDimCalculate<double, double, sinPolicy>, EndType> > > > >::Apply(0.5);
+                                TypeList<OneDimCalculate<double, double, cosPolicy>, EndType> > > > >::Apply(0.5);
 
     //but if we use the MK_... macro , we can get a short function
     MathApplyUnitTest::TypeLister::VerifyEveryTypeList();
